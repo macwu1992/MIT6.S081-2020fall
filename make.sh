@@ -4,6 +4,10 @@ current_script_dir=$(realpath "$0" | sed 's|\(.*\)/.*|\1|')
 filenames=$(find ./lab_* -name '*.c' | xargs basename)
 xv6PkgName=$1
 
+if [[ -z "$xv6PkgName" ]]; then
+    xv6PkgName="xv6-labs-2020"
+fi
+
 appendLineNum=$(grep -n "UPROGS=" $current_script_dir/$xv6PkgName/Makefile | awk -F":" '{print $1}')
 for file in $(find ./lab_* -name '*.c');
 do
