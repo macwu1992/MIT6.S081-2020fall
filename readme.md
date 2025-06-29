@@ -3,7 +3,7 @@
 https://pdos.csail.mit.edu/6.S081/2020/schedule.html
 
 # Build script
-make.sh is include to compile the xv6 pkg.
+make.sh is included to compile the xv6 pkg.
 
 ## Usage
 1. Download xv6 package.
